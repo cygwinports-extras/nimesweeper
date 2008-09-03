@@ -1,0 +1,7 @@
+category: Games
+requires: cygwin libncurses8
+sdesc: "Minesweeper clone in Curses"
+ldesc: "A clone of the popular MS Windows classic, Minesweeper. Written 
+in C and using the Ncurses libray, Nimesweeper has colour support, four 
+different levels of difficulty and high scores file. Great for wasting 
+a few minutes of your day on!"

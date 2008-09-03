@@ -1,0 +1,17 @@
+DESCRIPTION="Curses minesweeper game"
+HOMEPAGE="http://nimesweeper.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/Nimesweeper-${PV}.tar.bz2"
+PATCH_URI="1.0-scores-file.patch"
+
+SRC_DIR="Nimesweeper-${PV}"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake TARGET=${PN}.exe
+}
+
+src_install() {
+	cd ${B}
+	dobin ${PN}.exe
+}

@@ -1,0 +1,60 @@
+nimesweeper
+------------------------------------------
+A clone of the popular MS Windows classic, Minesweeper. Written in C and 
+using the Ncurses libray, Nimesweeper has colour support, four different 
+levels of difficulty and high scores file. Great for wasting a few 
+minutes of your day on!
+
+USAGE:
+To create a high scores file, you must first run `nimesweeper -n'.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libncurses8-5.5-3
+
+Build requirements:
+  binutils-20080624-2
+  cygport-0.4.0-1
+  gcc-core-3.4.4-3
+  make-3.81-1
+
+Canonical homepage:
+  http://nimesweeper.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/nimesweeper/
+
+------------------------------------
+
+Build instructions:
+  unpack nimesweeper-1.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./nimesweeper-1.0-X.cygport all
+
+This will create:
+  /usr/src/nimesweeper-1.0-X-src.tar.bz2
+  /usr/src/nimesweeper-1.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/nimesweeper.exe
+  /usr/share/doc/nimesweeper-1.0/COPYING
+  /usr/share/doc/nimesweeper-1.0/README
+
+------------------
+
+Port Notes:
+
+----- version 1.0-2 -----
+Rebuilt for ncurses-5.5.
+
+----- version 1.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
